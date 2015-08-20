@@ -1,0 +1,7 @@
+<resources>
+	<string name = "app_name">Improve App Performance</string>
+
+	<string name = "action_activityLeaks">ActivityLeaks</string>
+	<string name = "action_leak_object">Create then Leak Object</string>
+	<string name = "action_leak_activity">Create then Leak Activity, after rotation</string>
+</resources>

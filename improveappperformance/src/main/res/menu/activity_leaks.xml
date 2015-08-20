@@ -1,0 +1,18 @@
+<menu
+	tools:context = ".ActivityMain"
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	>
+	<item
+		android:id = "@+id/action_leak_object"
+		android:orderInCategory = "100"
+		android:showAsAction = "never"
+		android:title = "@string/action_leak_object"
+		/>
+	<item
+		android:id = "@+id/action_leak_activity"
+		android:orderInCategory = "100"
+		android:showAsAction = "never"
+		android:title = "@string/action_leak_activity"
+		/>
+</menu>
