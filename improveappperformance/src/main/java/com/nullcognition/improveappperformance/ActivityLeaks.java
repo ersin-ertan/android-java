@@ -35,10 +35,37 @@ unregister listeners
 -----
 
 use an event bus
+
+-----
+
+close long running threads
+
  */
 
 
 public class ActivityLeaks extends Activity{
+
+	// for any threads that may be long running but not needed onDestroy consider .close();
+	private CThread thread;
+
+
+	private static class CThread extends Thread{
+
+		boolean isRunning = false;
+
+		@Override public void run(){
+			super.run();
+			isRunning = true;
+			while(isRunning){
+				// do work
+			}
+		}
+
+		public void close(){
+			isRunning = false;
+		}
+	}
+
 
 	private final Handler leak = new Handler(){
 		@Override public void handleMessage(final Message msg){
