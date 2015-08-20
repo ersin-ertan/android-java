@@ -2,6 +2,7 @@ package com.nullcognition.improveappperformance;
 // ersin 19/08/15 Copyright (c) 2015+ All rights reserved.
 
 import android.app.Activity;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Menu;
@@ -26,28 +27,42 @@ the looper hol a reference to the handler to let the framework call Handler#hand
 javas non static inner and anonymous classes hold implicit reference to their outer class
 
 static inner do not
+
+-----
+
+unregister listeners
+
+-----
+
+use an event bus
  */
 
 
 public class ActivityLeaks extends Activity{
 
-//	private final Handler leak = new Handler(){
-//		@Override public void handleMessage(final Message msg){
-//			super.handleMessage(msg);
-//		}
-//	};
-//
-//	@Override protected void onCreate(final Bundle savedInstanceState){
-//		super.onCreate(savedInstanceState);
-//		leak.postDelayed(new Runnable(){
-//			byte[] c = new byte[204800];
-//
-//			// will hold a ref to outer class for the duration of the sleep, thus if you do lots of
-//			// rotations, then a forced garbage collection, nothing will be reclaimed
-//			@Override public void run(){
-//			}
-//		}, 1000 * 60 * 10);
-//	}
+	private final Handler leak = new Handler(){
+		@Override public void handleMessage(final Message msg){
+			super.handleMessage(msg);
+		}
+	};
+
+	@Override protected void onCreate(final Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		leak.postDelayed(new Runnable(){
+			byte[] c = new byte[204800];
+
+			// will hold a ref to outer class for the duration of the sleep, thus if you do lots of
+			// rotations, then a forced garbage collection, nothing will be reclaimed
+			@Override public void run(){
+			}
+		}, 1000 * 60 * 10);
+
+		// Unregister listeners to prevent leaking your context(listening object)
+
+		// if a Manager.getInstance(this).addListener(this); is init
+		// then be sure to Manager.getInstance(this).removeListener(this);
+		// before the context is destroyed, else a leak
+	}
 
 
 	@Override
@@ -79,7 +94,7 @@ public class ActivityLeaks extends Activity{
 		return super.onOptionsItemSelected(item);
 	}
 
-	static class Leakable{
+	class Leakable{
 
 		Leakable(){}
 
@@ -87,7 +102,7 @@ public class ActivityLeaks extends Activity{
 			activityLeaks = al;
 		}
 
-		static ActivityLeaks activityLeaks;
+		ActivityLeaks activityLeaks;
 		byte[] bytes = new byte[100_000];
 	}
 

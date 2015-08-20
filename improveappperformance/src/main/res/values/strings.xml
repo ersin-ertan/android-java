@@ -3,5 +3,5 @@
 
 	<string name = "action_activityLeaks">ActivityLeaks</string>
 	<string name = "action_leak_object">Create then Leak Object</string>
-	<string name = "action_leak_activity">Create then Leak Activity, after rotation</string>
+	<string name = "action_leak_activity">Create then Leak Activity</string>
 </resources>
