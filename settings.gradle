@@ -1,1 +1,1 @@
-include ':app', ':improveappperformance'
+include ':app', ':improveappperformance', ':javamicrobenchmarkharness', ':jakewhartonlogging'

@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/improveappperformance" />
+            <option value="$PROJECT_DIR$/jakewhartonlogging" />
+            <option value="$PROJECT_DIR$/javamicrobenchmarkharness" />
           </set>
         </option>
       </GradleProjectSettings>

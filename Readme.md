@@ -1,7 +1,12 @@
 ####Libraries
+
 - [Square](https://github.com/square)
 	- [Okio](https://github.com/square/okio) evaluating
 	- [LeakCanary](https://github.com/square/leakcanary)
+
+- [JakeWharton](https://github.com/JakeWharton)
+	- [Hugo](https://github.com/JakeWharton/hugo)
+	- [Timber](https://github.com/JakeWharton/timber)
 
 - [Rzwitserloot](https://github.com/rzwitserloot)
 	- [Lombok](https://github.com/rzwitserloot/lombok) evaluating
