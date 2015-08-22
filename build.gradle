@@ -12,6 +12,9 @@ buildscript{
 		classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
 	}
 }
+//plugins{// Error:The 'java' plugin has been applied, but it is not compatible with the Android plugins.
+//	id 'me.champeau.gradle.jmh' version '0.2.0'
+//}
 
 allprojects{
 	repositories{

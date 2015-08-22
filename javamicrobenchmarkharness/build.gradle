@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'me.champeau.gradle.jmh'
 
 android{
 	compileSdkVersion 22
@@ -17,8 +18,18 @@ android{
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 		}
 	}
+
 }
 
+
 dependencies{
+
 	compile fileTree(dir: 'libs', include: ['*.jar'])
+//	compile 'org.openjdk.jmh:jmh-core:1.9.3' // should be testCompile
+//	compile 'org.openjdk.jmh:jmh-generator-annprocess:1.9.3'
 }
+//
+//task bench(type: JavaExec, dependsOn: [classes, testClasses]) { // classes and testClasses not found, must be with alternative names in android environment
+//	classpath = sourceSets.test.runtimeClasspath // we'll put jmodern.Benchamrk in the test directory
+//	main = "jmodern.Benchmark";
+//}

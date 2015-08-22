@@ -17,5 +17,5 @@
 	- [Gradle-retrolambda](https://github.com/evant/gradle-retrolambda)
 
 
-- [Boris Farber's ways to improve your android app](http://www.api-solutions.com/2015/07/10-ways-to-improve-your-android-app.html) evaluating
+- [Boris Farber's ways to improve your android app](http://www.api-solutions.com/2015/07/10-ways-to-improve-your-android-app.html) Blog Post evaluating
 
