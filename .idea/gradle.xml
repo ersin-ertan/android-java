@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/jakewhartonlogging" />
             <option value="$PROJECT_DIR$/javamicrobenchmarkharness" />
             <option value="$PROJECT_DIR$/jooq" />
+            <option value="$PROJECT_DIR$/retrolambda" />
           </set>
         </option>
       </GradleProjectSettings>
