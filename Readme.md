@@ -9,12 +9,12 @@
 	- [Timber](https://github.com/JakeWharton/timber)
 
 - [Rzwitserloot](https://github.com/rzwitserloot)
-	- [Lombok](https://github.com/rzwitserloot/lombok) evaluating
-		- [Gradle Plugin](https://github.com/evant/android-retrolambda-lombok)
+	- [Lombok](https://github.com/rzwitserloot/lombok) NOT WORKING
+		- [Gradle Plugin](https://github.com/evant/android-retrolambda-lombok) NOT WORKING
 
 - [Retrolambda]()
-	- [Orfjackal](https://github.com/orfjackal/retrolambda) - [Example](https://github.com/ersin-ertan/android-java/tree/master/retrolambda/src/main/java/com/nullcognition/retrolambda)
-		- [Gradle Plugin](https://github.com/evant/gradle-retrolambda) Note gradle's new plugin syntax and position in the project's build.gradle
+	- [Orfjackal](https://github.com/orfjackal/retrolambda) - [Example](https://github.com/ersin-ertan/android-java/tree/master/retrolambda/src/main/java/com/nullcognition/retrolambda) Of lambda and method reference syntax - NOT WORKING
+		- [Gradle Plugin](https://github.com/evant/gradle-retrolambda) NOT WORKING
 
 
 - [Boris Farber's ways to improve your android app](http://www.api-solutions.com/2015/07/10-ways-to-improve-your-android-app.html) (Blog Post) - [Example](https://github.com/ersin-ertan/android-java/tree/master/improveappperformance/src/main/java/com/nullcognition/improveappperformance)
