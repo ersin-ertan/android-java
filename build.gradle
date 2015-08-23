@@ -10,7 +10,11 @@ buildscript{
 	dependencies{
 		classpath 'com.android.tools.build:gradle:1.2.3'
 		classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
+//		classpath 'me.tatarka:gradle-retrolambda:3.2.2'
+//		classpath 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2'
 	}
+
+//	configurations.classpath.exclude group: 'com.android.tools.external.lombok'
 }
 //plugins{// Error:The 'java' plugin has been applied, but it is not compatible with the Android plugins.
 //	id 'me.champeau.gradle.jmh' version '0.2.0'
@@ -18,9 +22,9 @@ buildscript{
 
 
 plugins {
-
+// having errors running retrolambda referring back to old syntax
 	// android-apt modifies the javaCompile task, apply this plugin last if used in conjunction
-	id "me.tatarka.retrolambda" version "3.2.2"
+//	id "me.tatarka.retrolambda" version "3.2.2"
 }
 
 allprojects{

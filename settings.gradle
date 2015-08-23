@@ -1,1 +1,1 @@
-include ':app', ':improveappperformance', ':javamicrobenchmarkharness', ':jakewhartonlogging', ':jooq', ':retrolambda'
+include ':app', ':improveappperformance', ':javamicrobenchmarkharness', ':jakewhartonlogging', ':jooq', ':retrolambda', ':lombok'

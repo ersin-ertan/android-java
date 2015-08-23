@@ -1,21 +1,21 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'me.tatarka.retrolambda'
 
 android{
 	compileSdkVersion 22
 	buildToolsVersion "22.0.1"
 
-	compileOptions{
-		sourceCompatibility JavaVersion.VERSION_1_8
-		targetCompatibility JavaVersion.VERSION_1_8
-	}
+//	compileOptions{
+//		sourceCompatibility JavaVersion.VERSION_1_8
+//		targetCompatibility JavaVersion.VERSION_1_8
+//	}
 
 	defaultConfig{
-		applicationId "com.nullcognition.retrolambda"
+		applicationId "com.nullcognition.lombok"
 		minSdkVersion 21
 		targetSdkVersion 22
 		versionCode 1
 		versionName "1.0"
+		multiDexEnabled true
 	}
 	buildTypes{
 		release{
@@ -25,15 +25,7 @@ android{
 	}
 }
 
-//retrolambda {
-//	jdk System.getenv("JAVA8_HOME")
-//	oldJdk System.getenv("JAVA6_HOME")
-//	javaVersion JavaVersion.VERSION_1_6
-//	jvmArgs '-arg1', '-arg2'
-//	defaultMethods false
-//	incremental true
-//}
-
 dependencies{
 	compile fileTree(dir: 'libs', include: ['*.jar'])
+	provided "org.projectlombok:lombok:1.16.6"
 }
