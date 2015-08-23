@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
@@ -41,6 +42,7 @@ public class ActivityMain extends Activity{
 		}
 		catch(RunnerException e){
 			e.printStackTrace();
+			Toast.makeText(ActivityMain.this, "JMH fail", Toast.LENGTH_SHORT).show();
 		}
 	}
 
