@@ -1,8 +1,0 @@
-<resources>
-	<string name = "app_name">JakeWhartonLogging</string>
-
-	<string name = "hello_world">Hello world!</string>
-	<string name = "action_settings">Settings</string>
-	<string name = "action_debugLogged">DebugLog</string>
-	<string name = "action_timber">Timber log I</string>
-</resources>
