@@ -90,7 +90,4 @@ public class SubtlePractices{
 	<T> void acceptAll(T... all){}
 	<T> void acceptAll(String message, T... all){}
 
-
-
-
 }
