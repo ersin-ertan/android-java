@@ -3,13 +3,16 @@
 buildscript{
 	repositories{
 		jcenter()
+
+
 	}
 
 
 
 	dependencies{
-		classpath 'com.android.tools.build:gradle:1.2.3'
+		classpath 'com.android.tools.build:gradle:2.2.0-alpha3'
 		classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
+		classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 //		classpath 'me.tatarka:gradle-retrolambda:3.2.2'
 //		classpath 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2'
 	}
@@ -21,15 +24,16 @@ buildscript{
 //}
 
 
-plugins {
+//plugins {
 // having errors running retrolambda referring back to old syntax
 	// android-apt modifies the javaCompile task, apply this plugin last if used in conjunction
 //	id "me.tatarka.retrolambda" version "3.2.2"
-}
+//}
 
 allprojects{
 	repositories{
 		jcenter()
+
 	}
 }
 

@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/autovalue" />
             <option value="$PROJECT_DIR$/eliminatingcodeovehead" />
             <option value="$PROJECT_DIR$/improveappperformance" />
             <option value="$PROJECT_DIR$/javamicrobenchmarkharness" />
@@ -18,6 +19,7 @@
             <option value="$PROJECT_DIR$/retrolambda" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

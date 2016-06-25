@@ -1,1 +1,1 @@
-include ':app', ':improveappperformance', ':javamicrobenchmarkharness', ':jooq', ':retrolambda', ':lombok', ':eliminatingcodeovehead'
+include ':app', ':improveappperformance', ':javamicrobenchmarkharness', ':jooq', ':retrolambda', ':lombok', ':eliminatingcodeovehead', ':autovalue'
