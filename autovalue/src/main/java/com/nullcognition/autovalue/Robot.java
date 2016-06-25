@@ -4,6 +4,7 @@ import com.google.auto.value.AutoValue;
 
 /**
  * Created by mms on 6/25/16.
+ * Showcasing the construction with a required parameter, and setting default values
  */
 @AutoValue
 abstract class Robot {

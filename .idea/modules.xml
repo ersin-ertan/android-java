@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/autovalue/autovalue.iml" filepath="$PROJECT_DIR$/autovalue/autovalue.iml" />
       <module fileurl="file://$PROJECT_DIR$/eliminatingcodeovehead/eliminatingcodeovehead.iml" filepath="$PROJECT_DIR$/eliminatingcodeovehead/eliminatingcodeovehead.iml" />
+      <module fileurl="file://$PROJECT_DIR$/immutables/immutables.iml" filepath="$PROJECT_DIR$/immutables/immutables.iml" />
       <module fileurl="file://$PROJECT_DIR$/improveappperformance/improveappperformance.iml" filepath="$PROJECT_DIR$/improveappperformance/improveappperformance.iml" />
       <module fileurl="file://$PROJECT_DIR$/javamicrobenchmarkharness/javamicrobenchmarkharness.iml" filepath="$PROJECT_DIR$/javamicrobenchmarkharness/javamicrobenchmarkharness.iml" />
       <module fileurl="file://$PROJECT_DIR$/jooq/jooq.iml" filepath="$PROJECT_DIR$/jooq/jooq.iml" />

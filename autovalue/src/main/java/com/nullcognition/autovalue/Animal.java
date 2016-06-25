@@ -4,6 +4,7 @@ import com.google.auto.value.AutoValue;
 
 /**
  * Created by mms on 6/25/16.
+ * Showcasing the standard usage for immutable values
  */
  @AutoValue
 abstract class Animal {
