@@ -1,5 +1,6 @@
 package com.nullcognition.autovalue;
 
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 
 import com.google.auto.value.AutoValue;
@@ -11,7 +12,7 @@ import com.google.auto.value.AutoValue;
 
 
 @AutoValue
-abstract class Vehicle {
+abstract class Vehicle implements Parcelable{
 
     abstract int required();
 

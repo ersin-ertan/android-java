@@ -1,5 +1,7 @@
 package com.nullcognition.autovalue;
 
+import android.os.Parcelable;
+
 import com.google.auto.value.AutoValue;
 
 /**
@@ -7,7 +9,7 @@ import com.google.auto.value.AutoValue;
  * Showcasing the construction with a required parameter, and setting default values
  */
 @AutoValue
-abstract class Robot {
+abstract class Robot implements Parcelable{
      abstract int required();
      abstract String name();
 

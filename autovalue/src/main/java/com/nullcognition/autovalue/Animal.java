@@ -1,5 +1,7 @@
 package com.nullcognition.autovalue;
 
+import android.os.Parcelable;
+
 import com.google.auto.value.AutoValue;
 
 /**
@@ -7,7 +9,7 @@ import com.google.auto.value.AutoValue;
  * Showcasing the standard usage for immutable values
  */
  @AutoValue
-abstract class Animal {
+abstract class Animal implements Parcelable {
     static Animal create(String name, int numLegs){
         return new AutoValue_Animal(name, numLegs);
     }

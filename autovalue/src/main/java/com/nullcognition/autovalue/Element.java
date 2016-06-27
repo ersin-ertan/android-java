@@ -1,5 +1,7 @@
 package com.nullcognition.autovalue;
 
+import android.os.Parcelable;
+
 import com.google.auto.value.AutoValue;
 
 import solid.collections.SolidList;
@@ -8,7 +10,7 @@ import solid.collections.SolidList;
  * Created by mms on 6/25/16.
  */
 @AutoValue
-abstract class Element {
+abstract class Element implements Parcelable{
 
     public abstract SolidList<String> names();
     // should be an abstract ImmutableContainer but there isn't any
