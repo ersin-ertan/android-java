@@ -10,6 +10,8 @@ import org.threeten.bp.temporal.ChronoUnit;
  * Represents the duration between two instants on the time line.
  * Where physical duration could be infinite, adding a temporal unit like seconds
  * quantifies the time. Precision being nano secs, but not SI second based on atomic clock
+ *
+ * Showcasing ammounts of time
  */
 
 public class TDuration {
@@ -29,7 +31,12 @@ public class TDuration {
     Duration d = Duration.ofSeconds(1);              // PT1S
     Duration e = Duration.ofSeconds(3, 1);           // PT3.000000001S
     Duration f = Duration.ofMinutes(1);              // PT60S
-    Duration g = Duration.ofHours(1);                // PT3600S
+    Duration g = Duration.ofHours(1);                // PT3600S // or PT6H
+
+    g.multipliedBy(3);
+    g.plusMinutes(30);
+
+    g.get(ChronoUnit.HOURS);
 
     Duration i = Duration.parse("PT1S");             // PT1S
     // will parse the string produced by toString() which is the ISO-8601 format PTnS where n is the
