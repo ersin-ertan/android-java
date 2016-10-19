@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/lombok/lombok.iml" filepath="$PROJECT_DIR$/lombok/lombok.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrolambda/retrolambda.iml" filepath="$PROJECT_DIR$/retrolambda/retrolambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/threeten/threeten.iml" filepath="$PROJECT_DIR$/threeten/threeten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/truetime/truetime.iml" filepath="$PROJECT_DIR$/truetime/truetime.iml" />
     </modules>
   </component>
 </project>

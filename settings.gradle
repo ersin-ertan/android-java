@@ -1,2 +1,3 @@
 include ':app', ':improveappperformance', ':javamicrobenchmarkharness', ':jooq', ':retrolambda',
+    ':truetime',
     ':lombok', ':eliminatingcodeovehead', ':autovalue', ':immutables', ':threeten'
