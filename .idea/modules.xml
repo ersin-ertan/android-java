@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/android-java.iml" filepath="$PROJECT_DIR$/android-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/autovalue/autovalue.iml" filepath="$PROJECT_DIR$/autovalue/autovalue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autowithgson/autowithgson.iml" filepath="$PROJECT_DIR$/autowithgson/autowithgson.iml" />
       <module fileurl="file://$PROJECT_DIR$/eliminatingcodeovehead/eliminatingcodeovehead.iml" filepath="$PROJECT_DIR$/eliminatingcodeovehead/eliminatingcodeovehead.iml" />
       <module fileurl="file://$PROJECT_DIR$/immutables/immutables.iml" filepath="$PROJECT_DIR$/immutables/immutables.iml" />
       <module fileurl="file://$PROJECT_DIR$/improveappperformance/improveappperformance.iml" filepath="$PROJECT_DIR$/improveappperformance/improveappperformance.iml" />
