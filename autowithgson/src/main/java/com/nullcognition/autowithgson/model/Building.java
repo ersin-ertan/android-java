@@ -13,6 +13,9 @@ import com.google.auto.value.AutoValue;
   }
 
   @Nullable abstract String address();
+  // @Expose(serialize = false, deserialize = false)
+  // transient String password; will not get serialized
+  //
 
   // type adapter not needed, defined in class
 }
