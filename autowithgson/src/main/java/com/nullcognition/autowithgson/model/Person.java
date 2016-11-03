@@ -17,6 +17,9 @@ import com.google.gson.TypeAdapter;
     return new AutoValue_Person.GsonTypeAdapter(gson);
   }
 
+  /**
+   * @see <a href="https://code.google.com/p/android/issues/detail?id=226871">Reported Jack bug</a>
+   */
   //@SerializedName("n") // uncomment me to fail
   abstract String name();
 
@@ -25,7 +28,6 @@ import com.google.gson.TypeAdapter;
   @AutoValue.Builder public abstract static class Builder {
     public abstract Builder setName(String name);
     public abstract Builder setAge(int age);
-
     public abstract Person build();
   }
 }

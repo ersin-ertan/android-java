@@ -18,8 +18,6 @@ import com.google.gson.TypeAdapter;
   }
 
   public abstract int length();
-
   public abstract int width();
-
   public abstract Person person();
 }
