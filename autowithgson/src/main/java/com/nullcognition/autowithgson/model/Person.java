@@ -24,7 +24,6 @@ import com.google.gson.TypeAdapter;
 
   @AutoValue.Builder public abstract static class Builder {
     public abstract Builder setName(String name);
-
     public abstract Builder setAge(int age);
 
     public abstract Person build();

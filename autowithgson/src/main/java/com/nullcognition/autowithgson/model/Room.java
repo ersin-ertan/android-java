@@ -9,8 +9,8 @@ import com.google.gson.TypeAdapter;
  */
 @AutoValue public abstract class Room {
 
-  public static Room create(int length, int width) {
-    return new AutoValue_Room(length, width);
+  public static Room create(int length, int width, Person person) {
+    return new AutoValue_Room(length, width, person);
   }
 
   public static TypeAdapter<Room> typeAdapter(Gson gson) {
@@ -19,5 +19,7 @@ import com.google.gson.TypeAdapter;
 
   public abstract int length();
 
-  abstract int width();
+  public abstract int width();
+
+  public abstract Person person();
 }

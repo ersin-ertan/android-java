@@ -11,7 +11,8 @@ import com.nullcognition.autowithgson.model.Room;
 
 public class MainActivity extends AppCompatActivity {
   public static final String BUILD = "{\"address\":\"your address\"}";
-  public static final String ROOM = "{\"length\":75,\"width\":76}";
+  public static final String ROOM =
+      "{\"length\":98,\"width\":78,\"person\":{\"name\":\"Smith\",\"age\":62}}";
   public static final String PER = "{\"name\":\"Will\",\"age\":40}";
   Gson gson;
 
@@ -20,12 +21,12 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
 
     gson = new GsonBuilder().registerTypeAdapterFactory(BuildingAdapterFactory.create())
-        //.setPrettyPrinting()
+        .setPrettyPrinting()
         .create();
 
     Building building = Building.create("my address");
-    Room room = Room.create(12, 34);
     Person person = Person.builder().setName("Tom").build();
+    Room room = Room.create(12, 34, person);
 
     System.out.println(gson.toJson(building)); // has type adapter predefined
     System.out.println(gson.toJson(room));
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
     person = gson.fromJson(PER, Person.class);
     room = gson.fromJson(ROOM, Room.class);
     //building = gson.fromJson(BUILD, Building.class); // didn't work
+
+    System.out.println();
+    System.out.println("^ Serialized(above) ^ V Deserialized(below) V");
+    System.out.println();
+
 
     System.out.println(person.toString());
     System.out.println(room.toString());
