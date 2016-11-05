@@ -11,12 +11,14 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/autovalue" />
             <option value="$PROJECT_DIR$/autowithgson" />
+            <option value="$PROJECT_DIR$/columbus" />
             <option value="$PROJECT_DIR$/eliminatingcodeovehead" />
             <option value="$PROJECT_DIR$/immutables" />
             <option value="$PROJECT_DIR$/improveappperformance" />
             <option value="$PROJECT_DIR$/javamicrobenchmarkharness" />
             <option value="$PROJECT_DIR$/jooq" />
             <option value="$PROJECT_DIR$/lombok" />
+            <option value="$PROJECT_DIR$/rave" />
             <option value="$PROJECT_DIR$/retrolambda" />
             <option value="$PROJECT_DIR$/threeten" />
             <option value="$PROJECT_DIR$/truetime" />

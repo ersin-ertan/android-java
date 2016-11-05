@@ -1,4 +1,6 @@
 include ':app', ':improveappperformance', ':javamicrobenchmarkharness', ':jooq', ':retrolambda',
+    ':columbus',
+    ':rave',
     ':autowithgson',
     ':truetime',
     ':lombok', ':eliminatingcodeovehead', ':autovalue', ':immutables', ':threeten'
