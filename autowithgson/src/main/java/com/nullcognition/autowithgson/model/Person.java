@@ -9,12 +9,13 @@ import com.google.gson.TypeAdapter;
  */
 @AutoValue public abstract class Person {
 
-  public static Builder builder() {
-    return new AutoValue_Person.Builder().setName("Default Name").setAge(4);
-  }
 
   public static TypeAdapter<Person> typeAdapter(Gson gson) {
     return new AutoValue_Person.GsonTypeAdapter(gson);
+  }
+
+  public static Builder builder() {
+    return new AutoValue_Person.Builder().setName("Default Name").setAge(4);
   }
 
   /**
